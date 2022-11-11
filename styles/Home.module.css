@@ -4,6 +4,7 @@
   height: 80px;
   width: 100%;
   display: flex;
+  background-color: inherit;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -49,7 +50,7 @@
   padding: 5px;
   margin: 15px;
 }
-.card > time, .card > p{
+.card > p{
   font-family: 'Noto Serif', serif;
 }
 
