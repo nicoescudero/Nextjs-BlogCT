@@ -1,9 +1,9 @@
-import Head from 'next/head'
 import Image from 'next/image';
 import { compareDesc } from 'date-fns'
 import { allPosts } from 'contentlayer/generated'
 import PostCard from '../components/postcard'
 import Navbar from '../components/navbar'
+import Footer from '../components/footer';
 import style from '../styles/Home.module.css'
 import profile from '../public/profile.jpg';
 import linkedin from '../public/linkedin.png';
@@ -20,10 +20,7 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <div className={style.main}>
-      <Head>
-        <title>Blog</title>
-        <Navbar/>
-      </Head>
+      <Navbar/>
       <main className={style.container}>
         <div className={style.list}>
           <h2>Posts</h2>
@@ -55,9 +52,7 @@ export default function Home({ posts }) {
           </div>
         </aside>
       </main>
-      <footer className={style.footer}>
-        <p>Copyright © nicoescudero</p>
-      </footer>
+      <Footer/>
     </div>
   )
 }

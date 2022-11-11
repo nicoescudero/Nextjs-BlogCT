@@ -2,7 +2,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { format, parseISO } from 'date-fns'
 import { allPosts } from 'contentlayer/generated'
-import style from '../../styles/Post.module.css' 
+import style from '../../styles/Post.module.css'
+import Navbar from '../../components/navbar'
+import ButtonCoffee from '../../components/btn_coffee';
 
 export async function getStaticPaths() {
   const paths = allPosts.map((post) => post.url)
@@ -23,9 +25,10 @@ export async function getStaticProps({ params }) {
 
 const PostLayout = ({ post }) => {
   return (
-    <>
+    <div className={style.container}>
       <Head>
         <title>{post.title}</title>
+        <Navbar/>
       </Head>
       <article className="mx-auto max-w-2xl py-16">
         <div className="mb-6 text-center">
@@ -41,7 +44,8 @@ const PostLayout = ({ post }) => {
         </div>
         <div className={style.post} dangerouslySetInnerHTML={{ __html: post.body.html }} />
       </article>
-    </>
+      <ButtonCoffee/>
+    </div>
   )
 }
 
