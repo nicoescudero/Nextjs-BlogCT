@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { format, parseISO } from 'date-fns'
 import { allPosts } from 'contentlayer/generated'
+import style from '../../styles/Post.module.css' 
 
 export async function getStaticPaths() {
   const paths = allPosts.map((post) => post.url)
@@ -38,7 +39,7 @@ const PostLayout = ({ post }) => {
             {format(parseISO(post.date), 'LLLL d, yyyy')}
           </time>
         </div>
-        <div className="cl-post-body" dangerouslySetInnerHTML={{ __html: post.body.html }} />
+        <div className={style.post} dangerouslySetInnerHTML={{ __html: post.body.html }} />
       </article>
     </>
   )
