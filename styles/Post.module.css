@@ -23,14 +23,6 @@
 }
 
 .btn_coffee{
-  display: inline-block;
-  background-color: yellow;
-  margin: auto;
-  padding: 5px 15px;
-  border: 1px solid black;
-  border-radius: 3px;
-  font-family: 'Noto Serif', serif;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
+  width: 200px;
+  margin: 2% auto;
 }
