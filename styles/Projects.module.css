@@ -12,3 +12,13 @@
   border: 1px solid black;
   border-radius: 3px;
 }
+
+.footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 5vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}

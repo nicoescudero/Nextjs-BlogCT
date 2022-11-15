@@ -26,3 +26,12 @@
   width: 200px;
   margin: 2% auto;
 }
+
+.footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 5vh;
+  width: 100%;
+  margin-top: auto;
+}

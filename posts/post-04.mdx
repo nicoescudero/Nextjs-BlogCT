@@ -10,6 +10,16 @@ Reprehenderit occaecat exercitation non cupidatat in eiusmod laborum ex eu
 fugiat aute culpa pariatur. Irure elit proident consequat veniam minim ipsum ex
 pariatur.
 
+```javascript
+export async function getStaticPaths() {
+  const paths = allPosts.map((post) => post.url)
+  return {
+    paths,
+    fallback: false,
+  }
+}
+```
+
 Mollit nisi cillum exercitation minim officia velit laborum non Lorem
 adipisicing dolore. Labore commodo consectetur commodo velit adipisicing irure
 dolore dolor reprehenderit aliquip. Reprehenderit cillum mollit eiusmod

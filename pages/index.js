@@ -71,7 +71,7 @@ export default function Home({ posts }) {
           </div>
         </aside>
       </main>
-      <Footer/>
+      <Footer footer={style.footer}/>
     </div>
   )
 }

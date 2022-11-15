@@ -1,8 +1,6 @@
-import style from "../styles/Home.module.css";
-
-export default function Footer (){
+export default function Footer ({ footer }){
   return (
-  <footer className={style.footer}>
+  <footer className={footer}>
     <p>Copyright © nicoescudero</p>
   </footer>
   );

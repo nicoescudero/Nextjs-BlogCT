@@ -4,6 +4,7 @@ import { format, parseISO } from 'date-fns'
 import { allPosts } from 'contentlayer/generated'
 import style from '../../styles/Post.module.css'
 import Navbar from '../../components/navbar'
+import Footer from '../../components/footer'
 import ButtonCoffee from '../../components/btn_coffee';
 
 export async function getStaticPaths() {
@@ -25,11 +26,9 @@ export async function getStaticProps({ params }) {
 
 const PostLayout = ({ post }) => {
   return (
-    <div className={style.container}>
-      <Head>
-        <title>{post.title}</title>
-        <Navbar/>
-      </Head>
+    <div>
+      <div className={style.container}>
+      <Navbar/>
       <article className="mx-auto max-w-2xl py-16">
         <div className="mb-6 text-center">
           <Link href="/">
@@ -45,6 +44,8 @@ const PostLayout = ({ post }) => {
         <div className={style.post} dangerouslySetInnerHTML={{ __html: post.body.html }} />
       </article>
       <ButtonCoffee/>
+      </div>
+      <Footer footer={style.footer}/>
     </div>
   )
 }

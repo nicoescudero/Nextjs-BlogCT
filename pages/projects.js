@@ -24,7 +24,7 @@ export default function Projects (){
           <p>Description</p>
         </div>
       </div>
-      <Footer/>
+      <Footer footer={style.footer}/>
     </div>
   );
 };
