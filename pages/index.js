@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { useState } from 'react';
-import { compareDesc } from 'date-fns'
-import { allPosts } from 'contentlayer/generated'
-import PostCard from '../components/postcard'
-import Navbar from '../components/navbar'
+import { compareDesc } from 'date-fns';
+import { allPosts } from 'contentlayer/generated';
+import PostCard from '../components/postcard';
+import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Pagination from '../components/pagination';
 import style from '../styles/Home.module.css'

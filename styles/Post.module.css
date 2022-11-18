@@ -17,6 +17,14 @@
   margin: 1%;
 }
 
+.post > pre{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  overflow: auto;
+  width: 90%;
+
+}
+
 .post > p > a > img{
   width: 90%;
   margin: 5%;

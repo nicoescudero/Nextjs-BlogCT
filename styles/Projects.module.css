@@ -54,3 +54,21 @@
   display: grid;
   grid-template-columns: repeat(4, max-content);
 }
+
+@media (max-width: 1200px){
+  .main{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .article{
+    padding: 10px;
+  }
+}
+
+@media (max-width: 850px){
+  .main{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .article{
+    padding: 5px;
+  }
+}
