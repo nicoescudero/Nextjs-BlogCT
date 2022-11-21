@@ -15,6 +15,18 @@ const projects = [
     technology: ['NODEJS','TYPESCRIPT'],
   },
   {
+    title: 'ONG - Somos Mas (Alkemy)',
+    links: [
+      {
+        href: 'https://github.com/alkemyTech/OT226-Server',
+        src: github,
+        alt: 'github'
+      },
+    ],
+    description: 'Esta API-REST fue construida con mis compañeros del desafio alkemy. La cual cumple con los requisitos solicitados por parte de la ONG.',
+    technology: ['NODEJS','EXPRESS','SWAGGER','MOCHA-CHAI','AWS','JWT'],
+  },
+  {
     title: 'Generador de codigo QR',
     links: [
       {

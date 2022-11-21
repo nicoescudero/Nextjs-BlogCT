@@ -64,24 +64,36 @@
   background-color: black;
   color: white;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
   height: 5vh;
   width: 100%;
   position: absolute;
   bottom: 0;
 }
+.footer > p{
+  margin: 0 2px;
+}
+.footer > a{
+  color: lightblue;
+}
 
 @media (max-width: 850px){
   .container{
     width: 90%;
-    margin: 2 auto;
+    margin-top: 15%;
     flex-direction: column;
     align-items: center;
   }
   .about{
     margin: 3% auto;
+    text-align: center;
   }
   .footer{
-    position: relative;
+    position: fixed;
     margin-top: auto;
   }
   .btn_social{
@@ -90,30 +102,35 @@
 }
 
 @media (max-width: 650px){
-  .social{
-    flex-direction: column;
-    margin: 1% 30%;
+  .about{
+    width: 90%;
+    margin: 5% auto;
   }
   .container{
-    margin-top: 6%;
+    margin-top: 20%;
   }
-}
-
-
-@media (max-height: 570px){
-  .footer{
-    position: relative;
-    margin-top: auto;
-  } 
 }
 
 @media (max-width: 450px){
   .container{
-    margin-top: 10%;
+    margin-top: 25%;
     font-size: 10px;
   }
+  
   .container > h2{
     font-size: 15px;
+  }
+ 
+  .social{
+    flex-direction: column;
+    margin: 1% auto;
+    width: fit-content;
+  }
+
+  .footer{
+    font-size: 10px;
+    height: max-content;
+    flex-direction: column;
   }
 }
 

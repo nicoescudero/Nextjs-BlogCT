@@ -17,9 +17,22 @@
   background-color: black;
   color: white;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
   height: 5vh;
   width: 100%;
   margin-top: auto;
+}
+
+.footer > p{
+  margin: 0 2px;
+}
+
+.footer > a{
+  color: lightblue;
 }
 
 .technology{
@@ -66,9 +79,35 @@
 
 @media (max-width: 850px){
   .main{
-    grid-template-columns: repeat(1, 1fr);
+    margin: 15% auto;
+    grid-template-columns: repeat(1, 90%);
   }
   .article{
     padding: 5px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main{
+    margin: 20% auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .main{
+    margin: 25% auto;
+    grid-template-columns: repeat(1, 98%);
+  }
+  .listtech{
+    grid-template-columns: repeat(1, max-content);
+  }
+  .technology{
+    padding: 0;
+    width: fit-content;
+  }
+  .footer{
+    font-size: 10px;
+    height: fit-content;
+    flex-direction: column;
   }
 }
