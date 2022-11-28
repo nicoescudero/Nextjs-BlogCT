@@ -39,17 +39,9 @@ Y las dependencias de desarrollo las cuales seran de utilidad durante el desarro
 - **morgan** brindara en consola un registro sobre las solicitudes http que reciba la API.
 - **nodemon** permitira actualizar los cambios que se realicen sobre nuestro codigo en la etapa de desarrollo, sin tener que estar reiniciando el servidor.
 
-### La estructura del proyecto hasta ahora se veria asi
+### La estructura del proyecto se veria de esta manera
 
-
-├── node_modules
-
-├── app.js
-
-├── package-lock.json 
-
-├── package.json
-
+![structureProject](https://user-images.githubusercontent.com/44248035/204321608-996e635c-8115-434a-941e-25e08828309f.jpg)
 
 ### Configuracion del archivo package.json
 Agregemos las siguientes lineas en scripts.
@@ -271,22 +263,31 @@ Finalmente nos queda probar la **API**, en este caso yo utilizare [postman](http
 
 **Crear un usuario**
 
+![postAPI](https://user-images.githubusercontent.com/44248035/204322906-8a84d892-c8dc-4951-9476-358ca9e6fce4.jpg)
+
 Como puedes ver envío a traves de body los datos que se necesitan para poder crear un usuario y en la parte superior o cabezera especifico el verbo POST, y la ruta o dirección de la **API**.
 
 **Obtener los usuarios**
 
+![getAPI](https://user-images.githubusercontent.com/44248035/204322973-8b66d253-093c-4b6b-8830-98fce2d7de1f.jpg)
+
 Lo que hago en esta solicitud es cambiar el verbo a GET pero la ruta es la misma.
 
-**Obtener los usuarios**
+**Obtener un usuario**
 
-Buscamos un usuario agregando a la ruta el parametro del nombre del usuario.
+![getOneAPI](https://user-images.githubusercontent.com/44248035/204323142-81066f98-2a4a-4f75-a475-66072824162a.jpg)
+
+Buscamos un usuario agregando a la ruta como parametro el nombre del usuario.
 
 **Actualizar un usuario**
+
+![putAPI](https://user-images.githubusercontent.com/44248035/204323261-670c1881-c671-4c23-b44a-2a463a333088.jpg)
 
 Cuando vamos a actualizar lo que haremos es cambiar el verbo de la solicitud a PUT, a la ruta además le agregaremos como parametro el nombre del usuario que queremos actualizar y tambien debemos enviar los datos o campos del usuario con los valores que queremos actualizar.
 
 **Eliminar un usuario**
 
+![deleteAPI](https://user-images.githubusercontent.com/44248035/204323328-be2e6571-da6c-4b4d-80f8-19f86edb88ce.jpg)
 
 Para eliminar un usuario agregamos a la ruta como parametro el nombre del usuario y cambiamos el verbo de la solicitud a DELETE.
 
