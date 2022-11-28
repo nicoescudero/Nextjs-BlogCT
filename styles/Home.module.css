@@ -23,6 +23,12 @@
   width: 60%;
 }
 
+.list > div > div > p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .list > h2{
   font-size: 20px;
   font-weight: bolder;

@@ -24,8 +24,8 @@ const ListPosts = ({ currentPosts }) =>{
     <div>
     {
       currentPosts.map((post, idx) => (
-            <PostCard key={idx} {...post} />
-          ))
+        <PostCard key={idx} {...post} />
+      ))
     }
     </div>
   );

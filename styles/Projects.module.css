@@ -5,6 +5,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px 10px;
   padding: 5px;
+  justify-content: center;
 }
 
 .article{
@@ -24,7 +25,8 @@
   justify-content: center;
   height: 5vh;
   width: 100%;
-  margin-top: auto;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer > p{
@@ -75,11 +77,15 @@
   .article{
     padding: 10px;
   }
+  .footer{
+    position: relative;
+    margin-top: auto;
+  }
 }
 
 @media (max-width: 850px){
   .main{
-    margin: 15% auto;
+    margin: 15% auto 0 auto;
     grid-template-columns: repeat(1, 90%);
   }
   .article{
@@ -89,13 +95,13 @@
 
 @media (max-width: 650px) {
   .main{
-    margin: 20% auto;
+    margin: 20% auto 0 auto;
   }
 }
 
 @media (max-width: 450px) {
   .main{
-    margin: 25% auto;
+    margin: 25% auto 0 auto;
     grid-template-columns: repeat(1, 98%);
   }
   .listtech{

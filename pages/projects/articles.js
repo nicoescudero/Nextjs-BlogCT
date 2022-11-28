@@ -24,7 +24,7 @@ const projects = [
       },
     ],
     description: 'Esta API-REST fue construida con mis compañeros del desafio alkemy. La cual cumple con los requisitos solicitados por parte de la ONG.',
-    technology: ['NODEJS','EXPRESS','SWAGGER','MOCHA-CHAI','AWS','JWT'],
+    technology: ['NODEJS','EXPRESS','SWAGGER','MOCHA-CHAI','AWS','JWT','TEST UNITARIOS'],
   },
   {
     title: 'Generador de codigo QR',
@@ -56,52 +56,6 @@ const projects = [
     technology: ['NODEJS','MONGOOSE','EXPRESS','JWT','EXPRESS-VALIDATOR'],
   },
   {
-    title: 'Acortador de URL',
-    links: [
-      {
-        href: 'https://github.com/nicoescudero/Url-Shortener',
-        src: github,
-        alt: 'github'
-      },
-    ],
-    description: 'Acortador de URL con NodeJS.',
-    technology: ['NODEJS','EXPRESS','EXPRESS-VALIDATOR','MONGOOSE'],
-  },
-  {
-    title: 'API-REST de BLOG',
-    links: [
-      {
-        href: 'https://github.com/nicoescudero/Blog_Api',
-        src: github,
-        alt: 'github'
-      },
-      {
-        href: 'https://blogapi-production-ba40.up.railway.app/',
-        src: siteweb,
-        alt: 'SiteWeb'
-      }
-    ],
-    description: 'API-REST que permite crear usuarios y tambien generar Posts.',
-    technology: ['NODEJS','EXPRESS','MONGOOSE','JWT','SWAGGER','MOCHA','TEST UNITARIOS'],
-  },
-  {
-    title: 'Blog con React',
-    links: [
-      {
-        href: 'https://github.com/nicoescudero/Blog-React',
-        src: github,
-        alt: 'github'
-      },
-      {
-        href: 'https://app.netlify.com/sites/blog-dev-ne',
-        src: siteweb,
-        alt: 'SiteWeb'
-      }
-    ],
-    description: 'Este blog esta construido con REACT, funciona con la api de blogs.',
-    technology: ['REACT','CSS'],
-  },
-  {
     title: 'API de Mercado',
     links: [
       {
@@ -112,30 +66,6 @@ const projects = [
     ],
     description: 'API-REST de mercado; permite hacer operaciones CRUD con usuarios y productos.',
     technology: ['NODEJS','EXPRESS','MONGOOSE','JWT','PASSPORT'],
-  },
-  {
-    title: 'Aplicación de Mercado',
-    links: [
-      {
-        href: 'https://github.com/nicoescudero/React-Market-App',
-        src: github,
-        alt: 'github'
-      },
-    ],
-    description: 'Aplicación de Mercado construida con REACT.',
-    technology: ['REACT','CSS'],
-  },
-  {
-    title: 'Aplicación de Notas',
-    links: [
-      {
-        href: 'https://github.com/nicoescudero/NotesNR',
-        src: github,
-        alt: 'github'
-      },
-    ],
-    description: 'Esta aplicación permite realizar operaciones CRUD con las notas.',
-    technology: ['NODEJS','REACT','CSS','EXPRESS','MONGOOSE','WEBPACK','BABEL'],
   },
   {
     title: 'GraphQL de Productos',
