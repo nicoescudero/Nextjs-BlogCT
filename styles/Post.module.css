@@ -74,6 +74,10 @@
   margin: 5%;
 }
 
+.post > p > img{
+  margin: 2% auto;
+}
+
 .btn_coffee{
   width: 200px;
   margin: 2% auto;

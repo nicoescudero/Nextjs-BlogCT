@@ -5,9 +5,9 @@ import Head from "next/head";
 const Navbar = () => {
   return (
     <Head>
-      <title>Blog</title>
+      <title>NE Dev</title>
       <nav className={style.navbar}>
-      <label className={style.logo}>Nico CodeDev</label>
+      <label className={style.logo}>NE Dev</label>
       <div className={style.options} for="check">
         <Link href="/"><a className={style.btn_page}>Inicio</a></Link>
         <Link href="/projects"><a className={style.btn_page}>Proyectos</a></Link>
